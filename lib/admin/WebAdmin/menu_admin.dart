@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:admin_ukm/admin/WebAdmin/login_admin.dart';
-import 'package:admin_ukm/Core/CoreAdmin/container_home_adm.dart';
+import 'package:admin_ukm/core/CoreAdmin/container_home_adm.dart';
 
 class MenuAdmin extends StatelessWidget {
   const MenuAdmin({super.key});
