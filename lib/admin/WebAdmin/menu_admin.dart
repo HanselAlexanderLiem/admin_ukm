@@ -1,3 +1,4 @@
+import 'package:admin_ukm/admin/WebAdmin/page_ukm_adm.dart';
 import 'package:flutter/material.dart';
 import 'package:admin_ukm/admin/WebAdmin/login_admin.dart';
 import 'package:admin_ukm/core/CoreAdmin/container_home_adm.dart';
@@ -47,7 +48,14 @@ class MenuAdmin extends StatelessWidget {
               icon: menuData['icon'],
               counter: menuData['counter'],
               color: menuData['color'],
-              onTap: () => _handleMenuTap(context, index),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => PageUkmAdm(
+                    namaUkm: menuData['title'],
+                  ),
+                ),
+              ),
             );
           },
         ),
@@ -142,16 +150,5 @@ class MenuAdmin extends StatelessWidget {
         'icon': Icons.self_improvement,
       },
     ];
-  }
-
-  void _handleMenuTap(BuildContext context, int index) {
-    final menuData = _getMenuData()[index];
-    String menuName = menuData['title'];
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('$menuName dipilih'),
-        duration: Duration(seconds: 2),
-      ),
-    );
   }
 }
