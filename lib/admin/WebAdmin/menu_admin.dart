@@ -10,6 +10,7 @@ class MenuAdmin extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text('Menu Admin'),
         actions: [
           Padding(

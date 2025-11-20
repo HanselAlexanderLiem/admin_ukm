@@ -11,9 +11,9 @@ class PageUkmAdm extends StatelessWidget {
     {
       'nama': 'Badminton',
       'anggota': [
-        {'nama': 'Udin', 'nim': 123, 'noTelp': 454, 'semester': 5},
-        {'nama': 'Budi', 'nim': 124, 'noTelp': 455, 'semester': 3},
-        {'nama': 'Aldi', 'nim': 128, 'noTelp': 459, 'semester': 4},
+        {'nama': 'Udin', 'nim': 32230130, 'noTelp': 08123456789, 'semester': 5},
+        {'nama': 'Budi', 'nim': 32230123, 'noTelp': 08123456790, 'semester': 3},
+        {'nama': 'Aldi', 'nim': 32230128, 'noTelp': 08123456791, 'semester': 4},
       ]
     },
     {

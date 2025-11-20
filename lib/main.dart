@@ -13,6 +13,7 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: LoginAdmin(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
