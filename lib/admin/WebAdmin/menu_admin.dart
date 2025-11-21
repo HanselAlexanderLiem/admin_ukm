@@ -1,7 +1,7 @@
 import 'package:admin_ukm/admin/WebAdmin/page_ukm_adm.dart';
 import 'package:flutter/material.dart';
-import 'package:admin_ukm/admin/WebAdmin/login_admin.dart';
 import 'package:admin_ukm/core/CoreAdmin/container_home_adm.dart';
+import 'package:admin_ukm/core/CoreAdmin/dropdown_menu.dart';
 
 class MenuAdmin extends StatelessWidget {
   const MenuAdmin({super.key});
@@ -15,16 +15,7 @@ class MenuAdmin extends StatelessWidget {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 16.0),
-            child: IconButton(
-              onPressed: () {
-                Navigator.pushReplacement(
-                  context, 
-                  MaterialPageRoute(builder: (context) => LoginAdmin())
-                );
-              }, 
-              icon: Icon(Icons.logout),
-              tooltip: 'Logout',
-            ),
+            child: DropdownMenuCustom(),
           ),
         ],
       ),
